@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Complexo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🚀 Inscrição em Evento Tech</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="area">Área de Atuação</label>
+                <select id="area" name="area" required>
+                    <option value="">-- Selecione sua área --</option>
+                    <option value="dev">Desenvolvimento de Software</option>
+                    <option value="design">Design UX/UI</option>
+                    <option value="marketing">Marketing Digital</option>
+                    <option value="outra">Outra</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Nível de Experiência</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="nivel" value="junior" required> Júnior</label>
+                    <label><input type="radio" name="nivel" value="pleno"> Pleno</label>
+                    <label><input type="radio" name="nivel" value="senior" required> Sênior</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Interesses (marque todos que se aplicam)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interesse[]" value="frontend"> Frontend</label>
+                    <label><input type="checkbox" name="interesse[]" value="backend"> Backend</label>
+                    <label><input type="checkbox" name="interesse[]" value="nuvem"> Computação em Nuvem</label>
+                    <label><input type="checkbox" name="interesse[]" value="ia"> Inteligência Artificial</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="obs">Comentários / Expectativas para o Evento</label>
+                <textarea id="obs" name="obs" rows="4" placeholder="Escreva suas observações aqui..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Finalizar Inscrição</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

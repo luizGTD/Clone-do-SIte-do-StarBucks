@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* ======================================= */
+/* 🌈 Variáveis de Cores e Configuração Global */
+/* ======================================= */
+:root {
+    --primary-color: #20b2aa;       /* Teal Claro/Médio (Destaque Principal) */
+    --primary-color-dark: #13bbb3;  /* Teal Escuro (Hover) */
+    --secondary-color: #d0c9d6;     /* Cinza/Lavanda Claro (Bordas Secundárias) */
+    --text-dark: #1f2937;           /* Texto Principal */
+    --text-light: #6b7280;          /* Texto Secundário */
+    --extra-light: #add8e6;         /* Azul Pastel (Fundo/Detalhe) */
+    --max-width: 1200px;
+    --white: #ffffff;
+}
+
+/* Reset Básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fundo com cor pastel clara (extra-light) e centro alinhado */
+    background-color: var(--extra-light); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que cubra a tela inteira */
+    padding: 20px;
+}
+
+/* ======================================= */
+/* 📦 Contêiner Principal e Título */
+/* ======================================= */
+
+.container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px; /* Tamanho ideal para um formulário */
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color-dark);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* Linha sutil para separar o título */
+    border-bottom: 2px solid var(--secondary-color); 
+    padding-bottom: 15px;
+}
+
+/* ======================================= */
+/* 📝 Inputs e Labels */
+/* ======================================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    /* Borda com cor de texto claro */
+    border: 1px solid var(--text-light); 
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: var(--text-dark);
+}
+
+/* Efeito de Foco (Focus) */
+.form-group input:focus,
+.form-group textarea:focus {
+    /* Destaca a borda com a cor primária */
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 0 3px rgba(32, 178, 170, 0.2);
+    outline: none;
+}
+
+/* ======================================= */
+/* ☑️ Checkboxes */
+/* ======================================= */
+
+.checkbox-group {
+    border: 1px solid var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--extra-light); /* Fundo sutil */
+    display: flex; /* Para alinhar os checkboxes */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0; /* Remove margem desnecessária em checkboxes */
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.checkbox-group input[type="checkbox"] {
+    /* Estilização básica para o checkbox */
+    margin-right: 8px;
+    accent-color: var(--primary-color); /* Usa a cor primária nativamente */
+}
+
+/* ======================================= */
+/* 🚀 Botão de Finalizar */
+/* ======================================= */
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    /* Cor de Fundo: Destaque Principal */
+    background-color: var(--primary-color); 
+    color: var(--white);
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    /* Escurece a cor usando a variável dark */
+    background-color: var(--primary-color-dark); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    /* Efeito de clique */
+    transform: scale(0.99); 
+}
