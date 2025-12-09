@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Fredericka+the+Great&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Kanit", sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1540px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        nav {
+            box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgba(0 0 0 / 7%);
+            width: 100%;
+            height: auto;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+        }
+
+        .nav-left {
+            display: flex;
+        }
+
+        .nav-left ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left ul li {
+            margin-left: 20px;
+        }
+
+        .nav-left ul li a {
+            text-transform: uppercase;
+            color: #181a18;
+        }
+
+        .nav-left ul li a:hover {
+            color: #00754a;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-right .location {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .nav-right .location:hover {
+            color: #00754a;
+        }
+
+        .nav-right .location span {
+            margin-left: 10px;
+        }
+
+        .location img {
+            height: 20px;
+        }
+
+        .nav-right button {
+            margin-left: 20px;
+        }
+
+        .btn {
+            padding: 6.4px 16px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 40px;
+        }
+
+        .btn-primary {
+            border: 1px solid rgba(0, 0, 0, 0.87);
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(0, 0, 0, 0.06);
+        }
+
+        .btn-secondary {
+            background-color: #181a18;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Content */
+
+        .box {
+            margin-top: 32px;
+        }
+
+        .box .container {
+           display: flex; 
+        }
+
+        .box-text {
+            width: 50%;
+            padding: 32px 80px;
+            background-color: #1e3932 ;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-text h1{
+            font-size: 50px;
+        }
+
+        .box-text p {
+            margin-top: 60px;
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+
+        .box-img {
+            width: 50%;
+        }
+
+        .box-img img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .lg {
+            font-size: 36px !important;
+        }
+
+        .p-lg {
+            font-size: 25px !important;
+            font-family: "Kanit", sans-serif;
+            
+        }
+
+        .at-0 {
+            margin-top: 0 !important;
+        }
+
+        .box-secondary .container {
+            flex-direction: row-reverse;
+        }
+        
+        .nb-1 {
+            margin-bottom: 32px;
+        }
+
+        .box-light {
+            background-color: #d4e9e2;
+            color: #181a18;
+        }
+
+        .box-light h1 {
+            font-weight: normal;
+        }
+
+        .btn-white {
+            border-color: #fff;
+            color: #fff;
+        }
