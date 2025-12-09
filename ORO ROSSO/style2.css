@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Fredericka+the+Great&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Fredericka+the+Great&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', serif;
+    background-color: #1C1C1C;
+}
+
+.container {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    background-color: #1C1C1C;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: #F5E6D3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F5E6D3;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #F5E6D3;
+    text-decoration: underline;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 20px;
+}
+.nav-left {
+    display: flex;
+    width: 100%;
+}
+
+.nav-left ul {
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    margin-top: 75px;
+}
+
+.nav-left ul li {
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Contêiner principal para a imagem e o texto */
+.container-principal {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Distribui os itens: imagem à esquerda, texto à direita */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    width: 90%; /* Define uma largura para o contêiner (ajuste conforme necessário) */
+    max-width: 1200px; /* Largura máxima para telas grandes */
+    margin: 50px auto; /* Centraliza o contêiner na página e adiciona margem */
+    padding: 10px;
+    /* border: 1px solid #ccc; /* Opcional: para visualizar o contêiner */
+}
+
+/* Contêiner da imagem (lado esquerdo) */
+.conteudo-esquerda {
+    flex: 1; /* Permite que ocupe o espaço disponível */
+    text-align: left; /* Garante que a imagem fique alinhada à esquerda dentro do seu próprio contêiner */
+    padding-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.conteudo-esquerda img {
+    max-width: 100%; /* Garante que a imagem não transborde seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Contêiner do texto (lado direito) */
+.conteudo-direita {
+    flex: 1; /* Permite que ocupe o espaço disponível, dividindo com a imagem */
+    text-align: center; /* Alinha todo o conteúdo de texto à direita */
+    padding-left: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+/* Estilos para o h1 e parágrafos dentro do conteúdo-direita (opcional) */
+.conteudo-direita h1 {
+    font-size: 2.9em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.conteudo-direita p {
+    font-size: 2em;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Contêiner principal que organiza os dois lados */
+.container-principal {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Coloca o conteúdo da esquerda no início e o da direita no final */
+    align-items: center; /* Centraliza os itens verticalmente (imagem e bloco de texto) */
+    width: 90%; /* Define uma largura para o contêiner geral */
+    max-width: 1200px; /* Limite a largura em telas grandes */
+    margin: 50px auto; /* Centraliza o contêiner na página e adiciona espaçamento */
+    padding: 20px;
+    /* Opcional: border: 1px solid #ccc; para visualizar o limite do contêiner */
+}
+
+/* Contêiner do texto (lado esquerdo) */
+.conteudo-esquerda {
+    flex: 1; /* Permite que este contêiner ocupe o espaço disponível */
+    text-align: left; /* Alinha o texto (h1 e p) à esquerda dentro deste contêiner */
+    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+/* Estilos para o h1 e parágrafo dentro do conteudo-esquerda (opcional) */
+.conteudo-esquerda h1 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.conteudo-esquerda p {
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Contêiner da imagem (lado direito) */
+.conteudo-direita {
+    flex: 1; /* Permite que este contêiner ocupe o espaço disponível */
+    text-align: right; /* Alinha a imagem à direita dentro deste contêiner */
+    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.conteudo-direita img {
+    max-width: 100%; /* Garante que a imagem não transborde seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin-left: auto; /* Centraliza a imagem à direita dentro do seu flex item */
+    /* Se a imagem for menor que o espaço disponível, 'margin-left: auto' empurrará para a direita. */
+}
+
+.pp{
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.img {
+    font-size: 2.1em;
+    margin-bottom: 40px;
+}
+
+
+
+.p {
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+/* Center the main testimonial section */
+.testimonials-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers the columns horizontally */
+    gap: 40px; /* Adds space between the columns */
+    max-width: 1200px; /* Limits the overall width of the testimonials */
+    margin: 0 auto; /* Centers the container on the page */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.testimonials-column {
+    flex: 1; /* Allows columns to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+    text-align: left; /* Aligns text within each column to the left */
+}
+
+.paragrafos p {
+    margin-bottom: 15px; /* Adds some space below each paragraph */
+    font-family: 'Montserrat', serif;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+/* Adjustments for the image heading if needed */
+.depoimento {
+    text-align: center; /* Centers the image heading */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Styles for stars and names (adjust as per your existing CSS) */
+.nomes {
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', serif;
+    color: #FFFFFF;
+    font-size: 1.8em;
+}
+
+.estrelas.amarelas, .estrelinhas.amarelas {
+    color: gold; /* Or your preferred yellow color for stars */
+}
+
+.kl {
+    font-family: 'Montserrat', serif;
+    font-weight: lighter;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.h2 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+/* Basic styling for the article or overall page if needed */
+article {
+    padding: 20px;
+}
